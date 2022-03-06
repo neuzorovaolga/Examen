@@ -316,6 +316,7 @@ margin-left: 15px;
   justify-content: space-between;
   align-items: center;
   margin-top: 18px;
+  margin-right: 70px;
 }
 
 .number {
@@ -852,10 +853,38 @@ width: 233px;
   margin-right: 45px;
 }
 
+.nevidimka{
+  display: none;
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  max-width: 1200px;
+}
+
+.nevidimka .net, .nevidimka .calendar, .nevidimka .reitingi{
+width: 377px;
+height: 340px;
+margin-top: 0px;
+}
+
+
 @media (min-width: 1630px) { 
 
 }
 
-@media (min-width: 1630px) { 
+@media (max-width: 1200px) { 
+.nav, .progress, .rightsec {
+  display: none;
+}
+
+body, .section1{
+  width: 1200px;
+}
+
+.nevidimka{
+  display: flex;
+}
+
 
 }
