@@ -868,23 +868,82 @@ height: 340px;
 margin-top: 0px;
 }
 
-
-@media (min-width: 1630px) { 
-
-}
-
-@media (max-width: 1200px) { 
-.nav, .progress, .rightsec {
+.burger{
   display: none;
 }
 
-body, .section1{
-  width: 1200px;
-}
+@media (max-width: 1630px) { 
+  main, .content,.section1{
+    width: 1200px;
+  }
+
+  .nav, .progress, .rightsec {
+    display: none;
+  }
 
 .nevidimka{
   display: flex;
 }
 
+.dannie{
+  width: 400px;
+  padding-right: 0;
+}
 
+}
+
+@media (max-width: 1200px){ 
+  main, .content,.section1{
+    width: 920px;
+  }
+
+  header{
+    min-width: 920px;
+  }
+
+  .nav, .progress, .rightsec, .dannie, .nevidimka, .info hr, .vertical, .poisk {
+    display: none;
+  }
+
+  .centersec1 {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .centersec2 {
+    width: 920px;
+  }
+
+  .smenafoto {
+    left: -40px;
+    bottom: 10px;
+  }
+
+  .eclipse{
+    margin-left: 0;
+  }
+
+  .size2{
+    width: 92%;
+  }
+
+  .knopki{margin-right: 40px;}
+
+  .perepiska, .perepiska2{
+    margin-left: 20px;
+  }
+
+  .impuls{
+    display: none;
+  }
+
+  .burger{
+    display: block;
+    width: 40px;
+  }
+
+  .knopki{
+    margin: 0;
+    width: 10%;
+  }
 }
