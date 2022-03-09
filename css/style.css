@@ -20,7 +20,7 @@ header {
   left: 0px;
   top: 0px;
   background: #2d2f34;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +32,7 @@ header {
   left: 0px;
   top: 0px;
   background: #2d2f34;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -540,6 +540,7 @@ width: 233px;
 
 .color2 {
   opacity: 50%;
+  z-index: 0;
 }
 
 .calendar-container button:hover {
@@ -872,6 +873,13 @@ margin-top: 0px;
   display: none;
 }
 
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+
 @media (max-width: 1630px) { 
   main, .content,.section1{
     width: 1200px;
@@ -890,6 +898,10 @@ margin-top: 0px;
   padding-right: 0;
 }
 
+.centersec2{
+  width: 1200px;
+}
+
 }
 
 @media (max-width: 1200px){ 
@@ -905,7 +917,7 @@ margin-top: 0px;
     display: none;
   }
 
-  .centersec1 {
+  .centersec1, {
     width: 100%;
     max-width: 1200px;
   }
@@ -946,4 +958,25 @@ margin-top: 0px;
     margin: 0;
     width: 10%;
   }
+}
+
+.centersec2_blok2::before {
+  /* content: "."; */
+  height: 40px;
+  /* display: block;                 */
+  width:1px;                    
+  content: '';           
+  position: absolute;             
+  border: 1px solid white; 
+  top:140px;                         
+  left: 50px;      
+}
+
+.centersec2_blok2{
+  position: relative;
+}
+
+.silka{
+  text-decoration: none;
+  color: white;
 }
